@@ -4,9 +4,17 @@ html {
   scroll-behavior: smooth;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
+  --background: #f2f4f8;
   --foreground: #171717;
+  --ink: #12163a;
+  --line: #d5dae8;
+  --cobalt: #17433d;
+  --bluecobalt: #3b4eff;
+  --sun: #ff9b21;
+  --sunDeep: #9a5600;
 }
 
 @theme inline {

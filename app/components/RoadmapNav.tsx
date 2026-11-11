@@ -1,6 +1,7 @@
 "use client";
 
 import { RoadmapItem } from "../types/roadmap";
+import ThemeToggle from "./ThemeToggle";
 
 interface RoadmapNavProps {
   items: RoadmapItem[];
@@ -15,7 +16,10 @@ export default function RoadmapNav({ items }: RoadmapNavProps) {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm py-3 px-4">
+    <nav
+      suppressHydrationWarning
+      className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm py-3 px-4"
+    >
       <div className="max-w-6xl mx-auto flex items-center justify-between overflow-x-auto gap-4 no-scrollbar">
         <span className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 whitespace-nowrap">
           Roadmap:
@@ -30,6 +34,10 @@ export default function RoadmapNav({ items }: RoadmapNavProps) {
               {index + 1}. {item.title.split(" ")[0]}...
             </button>
           ))}
+        </div>
+        {/* Botão de Alternância de Tema */}
+        <div className="flex items-center pl-2 border-l border-slate-200 dark:border-slate-800">
+          <ThemeToggle />
         </div>
       </div>
     </nav>
