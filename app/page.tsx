@@ -28,15 +28,18 @@ export default function Home() {
       </header>
 
       {/* Container Principal do Roadmap */}
-      <div className="max-w-5xl mx-auto px-4 relative">
+      <div className="max-w-360 mx-auto px-4 relative">
         {/* Linha vertical central da timeline (visível apenas em desktop) */}
         <div className="absolute left-1/2 -translate-x-1/2 top-4 bottom-4 w-0.5 bg-linear-to-b from-blue-500 via-indigo-500 to-purple-500 hidden md:block opacity-30" />
 
         {/* SEÇÃO 1: Reuniões em Grupo */}
         <section className="mb-16">
-          <div className="flex justify-center mb-8 relative z-10">
+          <div className="flex justify-around mb-8 relative z-10">
             <span className="bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
               Reuniões em Grupo
+            </span>
+            <span className="bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
+              Eventos do Hackathon
             </span>
           </div>
 
@@ -49,12 +52,6 @@ export default function Home() {
 
         {/* SEÇÃO 2: Eventos do Hackathon */}
         <section>
-          <div className="flex justify-center mb-8 relative z-10 pt-4">
-            <span className="bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-sm">
-              Eventos do Hackathon
-            </span>
-          </div>
-
           <div className="space-y-4">
             {hackathons.map((item, index) => (
               <RoadmapItemCard key={item.id} item={item} index={index} />

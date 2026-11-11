@@ -1,7 +1,15 @@
 import { RoadmapItem } from "../types/roadmap";
 
+// Importando as imagens locais
+import img2309 from "../imgs/Img(1) 23-09.png";
+import img3009 from "../imgs/Img(1) 30-09.png";
+import img0210 from "../imgs/Img(2) 02-10.jpeg";
+import img0710 from "../imgs/Img(2) 07-10.jpeg";
+import img1410 from "../imgs/Img(2) 14-10.jpeg";
+import img2110 from "../imgs/Img(2) 21-10.jpeg";
+import img2810 from "../imgs/Img(2) 28-10.jpg";
+
 export const roadmapData: RoadmapItem[] = [
-  // --- PARTE DE CIMA: Reuniões em Grupo ---
   {
     id: "reuniao-1",
     title: "Kickoff e Alinhamento Inicial",
@@ -9,8 +17,7 @@ export const roadmapData: RoadmapItem[] = [
     category: "meeting",
     description:
       "Primeira reunião da equipe para definir o escopo do projeto, escolher a stack tecnológica (Next.js, TypeScript e Tailwind) e delegar papéis.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80",
+    imageUrl: img2309,
   },
   {
     id: "reuniao-2",
@@ -19,10 +26,10 @@ export const roadmapData: RoadmapItem[] = [
     category: "meeting",
     description:
       "Validação dos wireframes das telas principais, estruturação dos componentes e configuração inicial do repositório no GitHub.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80",
+    imageUrl: img3009,
   },
 
+  // --- HACKATHON / ETAPAS ---
   {
     id: "hackathon-1",
     title: "Abertura do Hackathon e Lançamento do Desafio",
@@ -30,8 +37,7 @@ export const roadmapData: RoadmapItem[] = [
     category: "hackathon",
     description:
       "Início oficial da maratona de programação. Divisão dos temas, brainstorm acelerado de ideias e primeiras linhas de código.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80",
+    imageUrl: img0210,
   },
   {
     id: "hackathon-2",
@@ -40,27 +46,33 @@ export const roadmapData: RoadmapItem[] = [
     category: "hackathon",
     description:
       "Foco total na integração das APIs, refinamento visual com Tailwind CSS e resolução de bugs críticos de performance.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80",
+    imageUrl: img0710,
   },
   {
     id: "hackathon-3",
-    title: "Pitch Final e Apresentação do MVP",
-    date: "9 de Outubro, 2026",
+    title: "Evolução e Ajustes do Projeto",
+    date: "14 de Outubro, 2026",
     category: "hackathon",
     description:
-      "Entrega final da aplicação desenvolvida, gravação do vídeo de demonstração e apresentação para a banca avaliadora.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=80",
+      "Revisão parcial do código, testes de usabilidade e implementação de melhorias sugeridas na semana anterior.",
+    imageUrl: img1410,
   },
   {
-    id: "hackathon-3",
+    id: "hackathon-4",
+    title: "Validação Prévia e Testes Gerais",
+    date: "21 de Outubro, 2026",
+    category: "hackathon",
+    description:
+      "Verificação geral de fluxos, validação de responsividade e ajustes finais na interface do usuário.",
+    imageUrl: img2110,
+  },
+  {
+    id: "hackathon-5",
     title: "Pitch Final e Apresentação do MVP",
     date: "28 de Outubro, 2026",
     category: "hackathon",
     description:
       "Entrega final da aplicação desenvolvida, gravação do vídeo de demonstração e apresentação para a banca avaliadora.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=80",
+    imageUrl: img2810,
   },
 ];
