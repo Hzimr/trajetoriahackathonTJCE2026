@@ -41,7 +41,7 @@ export default function RoadmapItemCard({ item }: RoadmapItemCardProps) {
           <div className="group bg-white dark:bg-slate-800/90 rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl border border-slate-100 dark:border-slate-700/85 transition-all duration-300 hover:-translate-y-1">
             {/* Categoria */}
             <div
-              className={`flex mb-3 ${isMeeting ? "justify-start" : "justify-end"}`}
+              className={`flex mb-3 justify-center `} //${isMeeting ? "justify-start" : "justify-end"}
             >
               <span
                 className={`inline-block text-[10px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full ${config.badge}`}
@@ -68,7 +68,7 @@ export default function RoadmapItemCard({ item }: RoadmapItemCardProps) {
             >
               {/* Imagem inteira, sem cortes */}
               {item.imageUrl && (
-                <div className="w-full sm:w-1/2 shrink-0 rounded-xl overflow-hidden shadow-sm bg-slate-100 dark:bg-slate-900 border border-slate-200/50 dark:border-slate-700/50">
+                <div className="w-full shrink-0 rounded-xl overflow-hidden shadow-sm bg-slate-100 dark:bg-slate-900 border border-slate-200/50 dark:border-slate-700/50">
                   <Image
                     src={item.imageUrl}
                     alt={item.title}
