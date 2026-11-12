@@ -29,7 +29,10 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head />
-      <body className="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased">
+      <body
+        suppressHydrationWarning
+        className="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased"
+      >
         {children}
       </body>
     </html>
